@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #1e293bbb;
+  --secondary-color: #0f172abb;
+  --text-color: #f1f5f9;
+  --green: #22c55e;
+  --red: #dc2626;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(90deg, #312e81, #164e63);
+  color: var(--text-color);
+}
+
+body > div {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  padding: 20px;
+  padding-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff22;
+}
+
+.header h1 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid #ffffff22;
+}
+
+.todos {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 380px;
+  overflow: scroll;
+}
+
+.form {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  border: 1px solid #ffffff22;
+}
+
+.form input,
+.form button {
+  background: none;
+  border: none;
+}
+
+.form input {
+  color: var(--text-color);
+  padding: 0 10px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.form button {
+  background-color: var(--green);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  aspect-ratio: 1/1;
+  font-size: 16px;
+}
+
+.dropdown select {
+  background-color: var(--secondary-color);
+  outline: none;
+  color: var(--text-color);
+  border: none;
+  padding-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff22;
+}
+
+.todo-item {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #ffffff22;
+}
+
+.todo-item-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-item-buttons button {
+  background: none;
+  color: var(--text-color);
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+}
